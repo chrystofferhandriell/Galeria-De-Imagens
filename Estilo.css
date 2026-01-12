@@ -1,36 +1,43 @@
 body{
+      display: grid;
+     justify-content: space-around;
      background-color: black;
-
-
-
-}
-header h1 {
-   position: fixed;
- top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f00000;
-  color: #0a0a0a;
-  padding: 15px;
-  text-align: center;       
 }
 
-
-.solo {
-    display: flex;
-    
+.title {
+      display: flex;
+     justify-content: center;
+     color: rgb(255, 0, 0);
+     text-decoration: underline;
+   
 }
+
+#container-1 {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     max-width: 600px;
+     border-radius: 10px;
+     border: 2px solid red;
+     background-color: rgb(50, 50, 51);
+}
+
 .dark {
       background: #080808;
+      max-width: 100px;
       padding-top: 5px;
       border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      margin: 20px 20px 20px 20px ;
+       margin: 20px 20px 10px 20px;
         border: 3px solid rgb(255, 0, 0);
         cursor: pointer;
       transition:0.4s ease, transform 0.4s ease;
     }
     .dark:hover {
-        transform: scale(1.40);
+        transform: scale(1.10);
+    }
+
+    h3 {
+       text-align: center;
+       margin:0;
+       padding-bottom: 10px;
     }
